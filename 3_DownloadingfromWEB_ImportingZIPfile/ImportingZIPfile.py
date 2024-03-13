@@ -1,8 +1,7 @@
 
 ################################# Downloading Data by Windows Powershell #################################
 
-# Invoke-WebRequest -Uri "https://github.com/veribilimiokulu/udemy-apache-spark/raw/master/data/OnlineRetail.zip" -OutFile "C:\Users\gayan\Documents\apache_spark\2_Creating_RDD\OnlineRetail.zip"
-
+# Invoke-WebRequest -Uri "https://github.com/yasminkrmn/ApacheSpark/blob/main/2_Creating_RDD/OnlineRetail.csv" -OutFile "C:\Users\gayan\Documents\apache_spark\2_Creating_RDD\OnlineRetail.zip"
 
 ################################# Importing ZIP File CSV Data #################################
 import findspark
@@ -28,20 +27,19 @@ sc = pyspark.sparkContext
 from zipfile import ZipFile
 import os
 
-# Zipli dosyanın yolu
+# Path of Zip File
 zip_path = r"C:\Users\gayan\Documents\apache_spark\2_Creating_RDD\OnlineRetail.zip"
 extract_folder = r"C:\Users\gayan\Documents\apache_spark\2_Creating_RDD"
 
-# Zipli dosyayı açma ve içeriğini belirtilen klasöre çıkarma
+# Unzip the zip file and extract its contents to the specified folder
 with ZipFile(zip_path, 'r') as zip_ref:
     zip_ref.extractall(extract_folder)
 
-# Çıkarılan dosyalardan birini Spark ile okuma
-# Bu örnek için, zip dosyasının içinde sadece bir dosya olduğunu varsayıyoruz
+# Reading one of the extracted files with Spark
 file_to_read = os.path.join(extract_folder, os.listdir(extract_folder)[1])
 
-# Dosyayı Spark DataFrame olarak okuma
-df = sc.textFile(file_to_read) # CSV formatı varsayılıyor, gerektiğinde değiştirin
+# Read file as Spark DataFrame
+df = sc.textFile(file_to_read) 
 
-# DataFrame'i göster
+# Show RDD
 df.take(5)
