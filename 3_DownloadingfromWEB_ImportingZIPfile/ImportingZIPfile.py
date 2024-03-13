@@ -1,8 +1,7 @@
 
 ################################# Downloading Data by Windows Powershell #################################
 
-# Invoke-WebRequest -Uri "https://github.com/veribilimiokulu/udemy-apache-spark/raw/master/data/OnlineRetail.zip" -OutFile "C:\Users\gayan\Documents\apache_spark\2_Creating_RDD\OnlineRetail.zip"
-
+# Invoke-WebRequest -Uri "https://github.com/yasminkrmn/ApacheSpark/blob/main/2_Creating_RDD/OnlineRetail.csv" -OutFile "C:\Users\gayan\Documents\apache_spark\2_Creating_RDD\OnlineRetail.zip"
 
 ################################# Importing ZIP File CSV Data #################################
 import findspark
