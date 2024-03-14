@@ -42,3 +42,5 @@ canceled_total.take(5)
 # Calculation in sequential order
 canceled_total = canceled_data.reduceByKey(lambda x, y: x+y).filter(lambda x : x[0] == True)
 # [(True, -896812.4900000116)]
+
+sc.stop()
