@@ -1,0 +1,16 @@
+no, name, age, gender, occupation, city, income, property
+1,Pierre,35,M,Staff,Paris,3500,car
+2,carol ,42,F,Officer,Annecy,4200,car|house
+3,Teo,30,,Engineer,Bordeaux   ,9000,car|house|summerhouse
+4,Pauline ,29,F,Teacher,Paris,4200,car
+5,Yasmine,23,F,Sales Person,Lille,4800,car
+6, Alice,33,M,Officer,Paris,4250.0,house
+7,Daron,29,F,Sales Person,Bordeaux,7300,car|summerhouse
+8,Anthony,31,M,Engineer,Bordeaux,12000,car|house|store|summerhouse
+9,Leon,33,M,Doctor,Paris,180000,car|house|summerhouse,second car
+10,Mike,46,M,Barber, Bordeaux,12000,car|house|store
+11,Pascal,47,F,milliner,,4.800,store
+12,Lulu,43,F,Florist, Paris ,4200,car
+13,Tony,33,M,Officer,Professor ,3750,house
+14,Tracey,37,F,Doctor,Lyon,14250,car,house,summerhouse
+15,Francis,41,M,Singer, Paris,8700,car,house
